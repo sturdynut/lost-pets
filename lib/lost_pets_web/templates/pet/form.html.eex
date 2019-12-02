@@ -1,0 +1,67 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <%= label f, :microchip %>
+  <%= text_input f, :microchip %>
+  <%= error_tag f, :microchip %>
+
+  <%= label f, :name %>
+  <%= text_input f, :name %>
+  <%= error_tag f, :name %>
+
+  <%= label f, :owner_name %>
+  <%= text_input f, :owner_name %>
+  <%= error_tag f, :owner_name %>
+
+  <%= label f, :phone %>
+  <%= text_input f, :phone %>
+  <%= error_tag f, :phone %>
+
+  <%= label f, :email %>
+  <%= text_input f, :email %>
+  <%= error_tag f, :email %>
+
+  <%= label f, :last_seen_address %>
+  <%= text_input f, :last_seen_address %>
+  <%= error_tag f, :last_seen_address %>
+
+  <%= label f, :last_seen_city %>
+  <%= text_input f, :last_seen_city %>
+  <%= error_tag f, :last_seen_city %>
+
+  <%= label f, :last_seen_country %>
+  <%= text_input f, :last_seen_country %>
+  <%= error_tag f, :last_seen_country %>
+
+  <%= label f, :last_seen_state %>
+  <%= text_input f, :last_seen_state %>
+  <%= error_tag f, :last_seen_state %>
+
+  <%= label f, :last_seen_postal_code %>
+  <%= text_input f, :last_seen_postal_code %>
+  <%= error_tag f, :last_seen_postal_code %>
+
+  <%= label f, :species %>
+  <%= text_input f, :species %>
+  <%= error_tag f, :species %>
+
+  <%= label f, :age %>
+  <%= text_input f, :age %>
+  <%= error_tag f, :age %>
+
+  <%= label f, :color %>
+  <%= text_input f, :color %>
+  <%= error_tag f, :color %>
+
+  <%= label f, :size %>
+  <%= text_input f, :size %>
+  <%= error_tag f, :size %>
+
+  <div>
+    <%= submit "Save" %>
+  </div>
+<% end %>

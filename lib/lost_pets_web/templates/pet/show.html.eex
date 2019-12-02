@@ -1,0 +1,78 @@
+<h1>Show Pet</h1>
+
+<ul>
+
+  <li>
+    <strong>Microchip:</strong>
+    <%= @pet.microchip %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @pet.name %>
+  </li>
+
+  <li>
+    <strong>Owner name:</strong>
+    <%= @pet.owner_name %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @pet.phone %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @pet.email %>
+  </li>
+
+  <li>
+    <strong>Last seen address:</strong>
+    <%= @pet.last_seen_address %>
+  </li>
+
+  <li>
+    <strong>Last seen city:</strong>
+    <%= @pet.last_seen_city %>
+  </li>
+
+  <li>
+    <strong>Last seen country:</strong>
+    <%= @pet.last_seen_country %>
+  </li>
+
+  <li>
+    <strong>Last seen state:</strong>
+    <%= @pet.last_seen_state %>
+  </li>
+
+  <li>
+    <strong>Last seen postal code:</strong>
+    <%= @pet.last_seen_postal_code %>
+  </li>
+
+  <li>
+    <strong>Species:</strong>
+    <%= @pet.species %>
+  </li>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @pet.age %>
+  </li>
+
+  <li>
+    <strong>Color:</strong>
+    <%= @pet.color %>
+  </li>
+
+  <li>
+    <strong>Size:</strong>
+    <%= @pet.size %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.pet_path(@conn, :edit, @pet) %></span>
+<span><%= link "Back", to: Routes.pet_path(@conn, :index) %></span>

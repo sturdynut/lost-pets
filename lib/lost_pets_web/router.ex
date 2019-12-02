@@ -18,6 +18,7 @@ defmodule LostPetsWeb.Router do
 
     get "/", PageController, :index
     get "/hello/:data", HelloController, :message
+    resources "/pets", PetController
   end
 
   # Other scopes may use custom stacks.
