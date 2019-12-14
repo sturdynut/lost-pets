@@ -1,0 +1,28 @@
+:root {
+  --color-yellow: #FFF493;
+  --color-red: #ff5252;
+  --color-gray: #4F4F4F;
+  --color-black: #333;
+  --color-white: #FFF;
+  --palette-primary: var(--color-yellow);
+  --palette-secondary: var(--color-gray);
+  --palette-background: var(--color-white);
+  --palette-logo-color: var(--color-red);
+  --font-primary: 'Source Sans Pro', sans-serif;
+  --font-brand: 'Modak', cursive;
+  --z-brand-logo: 1000;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit
+}
+html {
+  box-sizing:border-box;
+  font-size:62.5%
+}
+body {
+  background-color: var(--palette-background);
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}

@@ -17,7 +17,6 @@ defmodule LostPetsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/hello/:data", HelloController, :message
     resources "/pets", PetController
   end
 
