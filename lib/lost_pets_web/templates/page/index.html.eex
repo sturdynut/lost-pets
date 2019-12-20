@@ -1,2 +1,2 @@
-<h1 class="brand-logo">Lost Pets</h1>
+<h1 class="brand-logo">Lost Pets <span class="brand-logo__icon">🔎</span></h1>
 <div id="map" />
