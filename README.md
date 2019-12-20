@@ -1,3 +1,5 @@
+![Build status](https://travis-ci.com/sturdynut/lost-pets.svg?branch=master)
+
 # 🗺 Lost Pets
 
 Where you go to report and find lost pets 🐶 😿
