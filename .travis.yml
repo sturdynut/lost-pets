@@ -1,0 +1,9 @@
+language: elixir
+elixir: 1.9.2
+otp_release: 22.1
+services:
+  - postgresql
+before_script:
+  - PGPASSWORD=postgres psql -c 'create database gigalixir_getting_started_test;' -U postgres
+script:
+  - mix test && ./deploy.sh
