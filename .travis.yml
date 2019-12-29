@@ -1,6 +1,6 @@
 language: elixir
 elixir: 1.9.2
-otp_release: 22.1
+otp_release: 20.3
 services:
   - postgresql
 before_install:
