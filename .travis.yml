@@ -1,11 +1,11 @@
 language: elixir
 elixir: 1.9.2
-otp_release: 20.3
+otp_release: 22.1
 services:
   - postgresql
 before_install:
   - chmod +x deploy.sh
 before_script:
-  - PGPASSWORD=postgres psql -c 'create database lost-pets;' -U postgres
+  - PGPASSWORD=postgres psql -c 'create database lost_pets;' -U postgres
 script:
   - mix test && ./deploy.sh
