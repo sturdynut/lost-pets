@@ -6,6 +6,6 @@ services:
 before_install:
   - chmod +x deploy.sh
 before_script:
-  - PGPASSWORD=postgres psql -c 'create database lost_pets;' -U postgres
+  - PGPASSWORD=postgres psql -c 'create database lost_pets_test;' -U postgres
 script:
   - mix test && ./deploy.sh
