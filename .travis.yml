@@ -6,6 +6,6 @@ services:
 before_install:
   - chmod +x deploy.sh
 before_script:
-  - PGPASSWORD=postgres psql -c 'create database gigalixir_getting_started_test;' -U postgres
+  - PGPASSWORD=postgres psql -c 'create database lost-pets;' -U postgres
 script:
   - mix test && ./deploy.sh
